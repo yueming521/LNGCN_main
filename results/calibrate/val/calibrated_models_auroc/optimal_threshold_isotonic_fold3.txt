@@ -1,0 +1,6 @@
+Method: isotonic
+Fold: 3
+Model Type: auroc
+Optimal Threshold (from validation set): 0.444444
+Validation Precision: 0.8336448598130841
+Validation Recall: 0.9291666666666667

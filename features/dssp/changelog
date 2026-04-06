@@ -1,0 +1,115 @@
+Version 4.5.3
+- Fix makefile to locate dictionary files
+
+Version 4.5.2
+- Use find_package before fetching libraries, again
+- Added Python module
+
+Version 4.5.1
+- Only use reconstructing load option when needed to
+  save lots of time on large structures
+- Fixes in writing the audit_conform category
+- Fix dictionary location
+
+Version 4.5
+- Based on new libcifpp version 8
+- Fixed Dockerfile
+
+Version 4.4.11
+- Write proper audit_conform records
+- Updated dssp-extension.dic file to include version info
+
+Version 4.4.10
+- Support for installing in environments that do not use resources,
+  this time for real.
+
+Version 4.4.9
+- Support for installing in environments that do not use resources
+
+Version 4.4.8
+- Fix writing version numbers
+
+Version 4.4.7
+- Fix cmakefile to use system installed libraries by default
+
+Version 4.4.6
+- Update dependency on libcifpp to version 7
+
+Version 4.4.5
+- Changes required for building on Windows
+
+Version 4.4.4
+- Fix unit test
+
+Version 4.4.3
+- Split the code in a sub project for libdssp and the main
+  code for the executable.
+- New version string code.
+
+Version 4.4.2
+- Fix unit test
+
+Version 4.4.1
+- Generate documentation only when requested
+
+Version 4.4.0
+- Packaging (split out the web server again)
+- Added markdown doc file, all doc files are now created from mkdssp.1
+  using pandoc, if that is installed.
+- small changes in output category item names (range_1 renamed to range_id_1)
+
+Version 4.3.1.1
+- Check to see if data will fit in old format before starting calculations
+
+Version 4.3.1
+- Optimised for speed
+- Fix in sheet numbering (mmCIF output)
+
+Version 4.3
+- Write new output by default
+- Fix some issues with this new output, typo e.g.
+- Added web service implementation
+- Added mmcif_pdbx dictionary extension
+
+Version 4.2.2.1
+- Fixed dependency on libcifpp
+
+Version 4.2.2
+- Building for CCP4
+- Fix is_cis
+
+Version 4.2.1
+- The previous version was a bit overly strict
+- Introduce a --quiet flag.
+
+Version 4.2.0
+- Changes for packaging
+- New mmCIF DSSP output, added several categories
+
+Version 4.1.0
+- Based on new libcifpp version 5
+
+Version 4.0.6
+- Prevent heap buffer overflow writing annotated mmCIF file.
+
+Version 4.0.5
+- The options for loading custom dictionary files and the like are now
+  visible in the help again.
+
+Version 4.0.4
+- New version string logic
+- Improved makefile
+
+Version 4.0.3
+- Fixed makefile
+
+Version 4.0.2
+- Dropped support for reading bzip2 files directly. gzipped is still supported
+
+Version 4.0.1
+- Switch from GNU configure to cmake as the build environment
+
+Version 4.0.0
+- Write the secondary structure information as an annotation to an mmCIF file
+  (old format is still available as an option)
+- Added the recognition of Poly-Proline helices

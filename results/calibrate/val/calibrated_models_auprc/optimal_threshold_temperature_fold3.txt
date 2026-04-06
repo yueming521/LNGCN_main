@@ -1,0 +1,6 @@
+Method: temperature
+Fold: 3
+Model Type: auprc
+Optimal Threshold (from validation set): 0.362018
+Validation Precision: 0.8201438848920863
+Validation Recall: 0.95

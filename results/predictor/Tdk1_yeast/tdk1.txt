@@ -1,0 +1,6 @@
+Q9Y7N0	tdk1_3_1_A
+Q9HGP4	tdk1_3_1_A
+Q9Y7N0	tdk1_A
+Q9HGP4	tdk1_A
+Q9Y7N0	tdk1_4_1_A
+Q9HGP4	tdk1_4_1_A

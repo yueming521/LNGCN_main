@@ -1,0 +1,78 @@
+{
+  "experiment": "C1_NoLTCq_dc",
+  "description": "C1_NoLTCq: Remove only the LTC Dense layer, keep the LTC graph layer, replace with SimpleDense",
+  "scientific_hypothesis": "Validate the contribution of the LTC Dense layer while preserving temporal modeling with the LTC graph layer",
+  "config_changes": {
+    "use_cfc": true,
+    "cfc_type": "original",
+    "cfc_layers": 3,
+    "use_ltc": true,
+    "ltc_type": "enhanced",
+    "ltc_layers": 2,
+    "ltc_residual": true,
+    "use_distance": true,
+    "use_structure_enhance": true,
+    "use_multi_scale": true,
+    "pool_type": "set2set",
+    "fusion_type": "symmetric",
+    "use_ltc_dense": false,
+    "fc_layers": 2,
+    "dropout": 0.4
+  },
+  "total_epochs": 50,
+  "training_time_seconds": 45155.06160879135,
+  "best_val_auprc": 0.9787307435897448,
+  "best_val_auroc": 0.9789503899957009,
+  "best_epoch_auprc": 14,
+  "best_epoch_auroc": 14,
+  "best_train_metrics": {
+    "epoch": 14,
+    "loss": 0.034799858787649775,
+    "auprc": 0.9897388905196692,
+    "auroc": 0.9893221622608712,
+    "precision": 0.9533078556263269,
+    "recall": 0.9510141145771558,
+    "f1": 0.952159603705086,
+    "accuracy": 0.9522357723577236,
+    "mcc": 0.9044740567948978
+  },
+  "best_val_metrics": {
+    "epoch": 14,
+    "loss": 0.061291322416879915,
+    "auprc": 0.9787307435897448,
+    "auroc": 0.9789503899957009,
+    "precision": 0.9149548606568102,
+    "recall": 0.9490398317160887,
+    "f1": 0.9316857076241548,
+    "accuracy": 0.9305851693911396,
+    "mcc": 0.8617773757044936
+  },
+  "early_stopping": {
+    "enabled": true,
+    "triggered": true,
+    "epoch": 15,
+    "status": "EarlyStopped(val_loss_no_improve=3)",
+    "patience": 15,
+    "min_epochs": 15,
+    "best_combined_score": 0.9518005805442731,
+    "best_combined_epoch": 14,
+    "final_combined_score": 0.9516881279975842,
+    "patience_counter": 1
+  },
+  "combined_metric_weights": {
+    "auroc": 0.35,
+    "auprc": 0.3,
+    "f1": 0.15,
+    "accuracy": 0.05,
+    "mcc": 0.15
+  },
+  "test_results": {
+    "auprc": 0.9792392115358056,
+    "auroc": 0.9786447148420994,
+    "f1": 0.9328195588626096,
+    "accuracy": 0.9315554352240423,
+    "mcc": 0.8635254062849143,
+    "precision": 0.918611954359887,
+    "recall": 0.9474735478298424
+  }
+}

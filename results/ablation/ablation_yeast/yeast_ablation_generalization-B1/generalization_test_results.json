@@ -1,0 +1,26 @@
+[
+  {
+    "model_name": "B1_AUPRC",
+    "auprc": 0.755356123752325,
+    "auroc": 0.7715467429948336,
+    "accuracy": 0.5,
+    "precision": 0.5,
+    "recall": 1.0,
+    "f1": 0.6666666666666666,
+    "num_samples": 44322,
+    "num_positive": 22161,
+    "num_negative": 22161
+  },
+  {
+    "model_name": "B1_AUROC",
+    "auprc": 0.8144051708763951,
+    "auroc": 0.8201003660848464,
+    "accuracy": 0.5101078471188123,
+    "precision": 0.5051090228993705,
+    "recall": 0.9993231352375795,
+    "f1": 0.6710400727217635,
+    "num_samples": 44322,
+    "num_positive": 22161,
+    "num_negative": 22161
+  }
+]

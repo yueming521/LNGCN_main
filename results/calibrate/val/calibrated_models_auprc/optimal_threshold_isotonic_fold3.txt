@@ -1,0 +1,6 @@
+Method: isotonic
+Fold: 3
+Model Type: auprc
+Optimal Threshold (from validation set): 0.394502
+Validation Precision: 0.8330241187384044
+Validation Recall: 0.9354166666666667

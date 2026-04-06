@@ -1,0 +1,880 @@
+Calibration method: platt
+Fold: 1
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.4223
+Parameters:
+  A: 1.249742
+  B: -0.201357
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4223 (from validation)
+Parameters:
+  A: 1.249742
+  B: -0.201357
+==================================================
+
+Calibration method: beta
+Fold: 1
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.5262
+Parameters:
+  a: 2.198152
+  b: -0.368048
+  c: 1.490198
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5262 (from validation)
+Parameters:
+  a: 2.198152
+  b: -0.368048
+  c: 1.490198
+==================================================
+
+Calibration method: temperature
+Fold: 1
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.4728
+Parameters:
+  temperature: 0.822653
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4728 (from validation)
+Parameters:
+  temperature: 0.822653
+==================================================
+
+Calibration method: isotonic
+Fold: 1
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.5714
+Parameters:
+  x: [array with 60 points]
+  y: [array with 60 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5714 (from validation)
+Parameters:
+  x: [array with 60 points]
+  y: [array with 60 points]
+==================================================
+
+Calibration method: boosting
+Fold: 1
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.5470
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5470 (from validation)
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 1
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.3998
+Parameters:
+  A: 1.062106
+  B: -0.181581
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3998 (from validation)
+Parameters:
+  A: 1.062106
+  B: -0.181581
+==================================================
+
+Calibration method: beta
+Fold: 1
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.5048
+Parameters:
+  a: 1.776548
+  b: -0.386134
+  c: 1.219313
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5048 (from validation)
+Parameters:
+  a: 1.776548
+  b: -0.386134
+  c: 1.219313
+==================================================
+
+Calibration method: temperature
+Fold: 1
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.4454
+Parameters:
+  temperature: 0.963977
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4454 (from validation)
+Parameters:
+  temperature: 0.963977
+==================================================
+
+Calibration method: isotonic
+Fold: 1
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.6171
+Parameters:
+  x: [array with 46 points]
+  y: [array with 46 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.6171 (from validation)
+Parameters:
+  x: [array with 46 points]
+  y: [array with 46 points]
+==================================================
+
+Calibration method: boosting
+Fold: 1
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.5510
+Parameters:
+  n_estimators: 100.000000
+  learning_rate: 0.050000
+  max_depth: 3.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5510 (from validation)
+Parameters:
+  n_estimators: 100.000000
+  learning_rate: 0.050000
+  max_depth: 3.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 2
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.5624
+Parameters:
+  A: 0.895947
+  B: -0.644166
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5624 (from validation)
+Parameters:
+  A: 0.895947
+  B: -0.644166
+==================================================
+
+Calibration method: beta
+Fold: 2
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.7508
+Parameters:
+  a: 2.613495
+  b: -0.059641
+  c: 1.843824
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.7508 (from validation)
+Parameters:
+  a: 2.613495
+  b: -0.059641
+  c: 1.843824
+==================================================
+
+Calibration method: temperature
+Fold: 2
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.6994
+Parameters:
+  temperature: 1.183179
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.6994 (from validation)
+Parameters:
+  temperature: 1.183179
+==================================================
+
+Calibration method: isotonic
+Fold: 2
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.8113
+Parameters:
+  x: [array with 60 points]
+  y: [array with 60 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.8113 (from validation)
+Parameters:
+  x: [array with 60 points]
+  y: [array with 60 points]
+==================================================
+
+Calibration method: boosting
+Fold: 2
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.7581
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.7581 (from validation)
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 2
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.5624
+Parameters:
+  A: 0.895947
+  B: -0.644166
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5624 (from validation)
+Parameters:
+  A: 0.895947
+  B: -0.644166
+==================================================
+
+Calibration method: beta
+Fold: 2
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.7508
+Parameters:
+  a: 2.613495
+  b: -0.059641
+  c: 1.843824
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.7508 (from validation)
+Parameters:
+  a: 2.613495
+  b: -0.059641
+  c: 1.843824
+==================================================
+
+Calibration method: temperature
+Fold: 2
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.6994
+Parameters:
+  temperature: 1.183179
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.6994 (from validation)
+Parameters:
+  temperature: 1.183179
+==================================================
+
+Calibration method: isotonic
+Fold: 2
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.8113
+Parameters:
+  x: [array with 60 points]
+  y: [array with 60 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.8113 (from validation)
+Parameters:
+  x: [array with 60 points]
+  y: [array with 60 points]
+==================================================
+
+Calibration method: boosting
+Fold: 2
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.7581
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.7581 (from validation)
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 3
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.1873
+Parameters:
+  A: 1.103085
+  B: -0.834593
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.1873 (from validation)
+Parameters:
+  A: 1.103085
+  B: -0.834593
+==================================================
+
+Calibration method: beta
+Fold: 3
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.2250
+Parameters:
+  a: 3.375176
+  b: 0.045956
+  c: 2.228388
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2250 (from validation)
+Parameters:
+  a: 3.375176
+  b: 0.045956
+  c: 2.228388
+==================================================
+
+Calibration method: temperature
+Fold: 3
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.3620
+Parameters:
+  temperature: 1.012416
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3620 (from validation)
+Parameters:
+  temperature: 1.012416
+==================================================
+
+Calibration method: isotonic
+Fold: 3
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.3945
+Parameters:
+  x: [array with 76 points]
+  y: [array with 76 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3945 (from validation)
+Parameters:
+  x: [array with 76 points]
+  y: [array with 76 points]
+==================================================
+
+Calibration method: boosting
+Fold: 3
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.3658
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3658 (from validation)
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 3
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.2337
+Parameters:
+  A: 1.442751
+  B: -0.581246
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2337 (from validation)
+Parameters:
+  A: 1.442751
+  B: -0.581246
+==================================================
+
+Calibration method: beta
+Fold: 3
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.2815
+Parameters:
+  a: 5.091365
+  b: 0.643401
+  c: 4.098653
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2815 (from validation)
+Parameters:
+  a: 5.091365
+  b: 0.643401
+  c: 4.098653
+==================================================
+
+Calibration method: temperature
+Fold: 3
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.3568
+Parameters:
+  temperature: 0.713137
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3568 (from validation)
+Parameters:
+  temperature: 0.713137
+==================================================
+
+Calibration method: isotonic
+Fold: 3
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.4444
+Parameters:
+  x: [array with 70 points]
+  y: [array with 70 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4444 (from validation)
+Parameters:
+  x: [array with 70 points]
+  y: [array with 70 points]
+==================================================
+
+Calibration method: boosting
+Fold: 3
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.3823
+Parameters:
+  n_estimators: 100.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 100.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3823 (from validation)
+Parameters:
+  n_estimators: 100.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 100.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 4
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.1968
+Parameters:
+  A: 0.627485
+  B: -0.833863
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.1968 (from validation)
+Parameters:
+  A: 0.627485
+  B: -0.833863
+==================================================
+
+Calibration method: beta
+Fold: 4
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.2505
+Parameters:
+  a: 2.083994
+  b: -0.069523
+  c: 1.486087
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2505 (from validation)
+Parameters:
+  a: 2.083994
+  b: -0.069523
+  c: 1.486087
+==================================================
+
+Calibration method: temperature
+Fold: 4
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.3746
+Parameters:
+  temperature: 1.780070
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3746 (from validation)
+Parameters:
+  temperature: 1.780070
+==================================================
+
+Calibration method: isotonic
+Fold: 4
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.3612
+Parameters:
+  x: [array with 64 points]
+  y: [array with 64 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3612 (from validation)
+Parameters:
+  x: [array with 64 points]
+  y: [array with 64 points]
+==================================================
+
+Calibration method: boosting
+Fold: 4
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.3292
+Parameters:
+  n_estimators: 100.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 100.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3292 (from validation)
+Parameters:
+  n_estimators: 100.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 100.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 4
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.2121
+Parameters:
+  A: 0.632443
+  B: -0.807369
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2121 (from validation)
+Parameters:
+  A: 0.632443
+  B: -0.807369
+==================================================
+
+Calibration method: beta
+Fold: 4
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.2882
+Parameters:
+  a: 2.079471
+  b: -0.068822
+  c: 1.502871
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2882 (from validation)
+Parameters:
+  a: 2.079471
+  b: -0.068822
+  c: 1.502871
+==================================================
+
+Calibration method: temperature
+Fold: 4
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.3880
+Parameters:
+  temperature: 1.750793
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3880 (from validation)
+Parameters:
+  temperature: 1.750793
+==================================================
+
+Calibration method: isotonic
+Fold: 4
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.4262
+Parameters:
+  x: [array with 62 points]
+  y: [array with 62 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4262 (from validation)
+Parameters:
+  x: [array with 62 points]
+  y: [array with 62 points]
+==================================================
+
+Calibration method: boosting
+Fold: 4
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.4267
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4267 (from validation)
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 5
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.1651
+Parameters:
+  A: 1.042396
+  B: -1.149498
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.1651 (from validation)
+Parameters:
+  A: 1.042396
+  B: -1.149498
+==================================================
+
+Calibration method: beta
+Fold: 5
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.2239
+Parameters:
+  a: 2.840570
+  b: -0.216720
+  c: 1.333797
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2239 (from validation)
+Parameters:
+  a: 2.840570
+  b: -0.216720
+  c: 1.333797
+==================================================
+
+Calibration method: temperature
+Fold: 5
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.4030
+Parameters:
+  temperature: 1.151399
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4030 (from validation)
+Parameters:
+  temperature: 1.151399
+==================================================
+
+Calibration method: isotonic
+Fold: 5
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.5440
+Parameters:
+  x: [array with 51 points]
+  y: [array with 51 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5440 (from validation)
+Parameters:
+  x: [array with 51 points]
+  y: [array with 51 points]
+==================================================
+
+Calibration method: boosting
+Fold: 5
+Model Type: auprc
+Dataset: val
+Optimal threshold: 0.3406
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3406 (from validation)
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+
+Calibration method: platt
+Fold: 5
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.1651
+Parameters:
+  A: 1.042396
+  B: -1.149498
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.1651 (from validation)
+Parameters:
+  A: 1.042396
+  B: -1.149498
+==================================================
+
+Calibration method: beta
+Fold: 5
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.2239
+Parameters:
+  a: 2.840570
+  b: -0.216720
+  c: 1.333797
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.2239 (from validation)
+Parameters:
+  a: 2.840570
+  b: -0.216720
+  c: 1.333797
+==================================================
+
+Calibration method: temperature
+Fold: 5
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.4030
+Parameters:
+  temperature: 1.151399
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.4030 (from validation)
+Parameters:
+  temperature: 1.151399
+==================================================
+
+Calibration method: isotonic
+Fold: 5
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.5440
+Parameters:
+  x: [array with 51 points]
+  y: [array with 51 points]
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.5440 (from validation)
+Parameters:
+  x: [array with 51 points]
+  y: [array with 51 points]
+==================================================
+
+Calibration method: boosting
+Fold: 5
+Model Type: auroc
+Dataset: val
+Optimal threshold: 0.3406
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+--------------------------------------------------
+Dataset: test
+Threshold used: 0.3406 (from validation)
+Parameters:
+  n_estimators: 50.000000
+  learning_rate: 0.100000
+  max_depth: 2.000000
+  min_samples_leaf: 50.000000
+  subsample: 0.800000
+  random_state: 42.000000
+==================================================
+

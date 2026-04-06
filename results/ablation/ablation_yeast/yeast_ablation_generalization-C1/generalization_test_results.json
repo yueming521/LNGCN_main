@@ -1,0 +1,26 @@
+[
+  {
+    "model_name": "C1_AUPRC",
+    "auprc": 0.3869194076036449,
+    "auroc": 0.3234468215925127,
+    "accuracy": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "num_samples": 44322,
+    "num_positive": 22161,
+    "num_negative": 22161
+  },
+  {
+    "model_name": "C1_AUROC",
+    "auprc": 0.4675405782999073,
+    "auroc": 0.4733475257975902,
+    "accuracy": 0.4953747574567935,
+    "precision": 0.4060494958753437,
+    "recall": 0.019990072650151167,
+    "f1": 0.03810424909685188,
+    "num_samples": 44322,
+    "num_positive": 22161,
+    "num_negative": 22161
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "experiment": "A1_NoCfC_dc",
+  "description": "A1_NoCfC: Remove the PreprocessCfC module to validate the importance of CfC for extracting dynamic information from sequence features",
+  "scientific_hypothesis": "The CfC module is critical for extracting dynamic information from sequence features; removing it will significantly reduce performance",
+  "config_changes": {
+    "config": {
+      "use_cfc": false,
+      "cfc_type": "linear",
+      "cfc_layers": 3,
+      "use_ltc": true,
+      "ltc_type": "enhanced",
+      "ltc_layers": 2,
+      "ltc_residual": true,
+      "use_distance": true,
+      "use_structure_enhance": true,
+      "use_multi_scale": true,
+      "pool_type": "set2set",
+      "fusion_type": "symmetric",
+      "use_ltc_dense": true,
+      "fc_layers": 2,
+      "dropout": 0.4
+    }
+  },
+  "total_epochs": 50,
+  "training_time_seconds": 49794.012591362,
+  "best_val_auprc": 0.9763493887162641,
+  "best_val_auroc": 0.9755344833766907,
+  "best_epoch_auprc": 16,
+  "best_epoch_auroc": 16,
+  "best_train_metrics": {
+    "epoch": 16,
+    "loss": 0.025561916979306144,
+    "auprc": 0.9947524376273409,
+    "auroc": 0.9944191346905918,
+    "precision": 0.9686590781481292,
+    "recall": 0.9645235069885641,
+    "f1": 0.9665868690470127,
+    "accuracy": 0.9666666666666667,
+    "mcc": 0.9333417587538537
+  },
+  "best_val_metrics": {
+    "epoch": 16,
+    "loss": 0.06403902133531643,
+    "auprc": 0.9763493887162641,
+    "auroc": 0.9755344833766907,
+    "precision": 0.9506235869010283,
+    "recall": 0.8848007603014052,
+    "f1": 0.9165318894592503,
+    "accuracy": 0.9196534335127086,
+    "mcc": 0.8412819827278525
+  },
+  "early_stopping": {
+    "enabled": true,
+    "triggered": true,
+    "epoch": 16,
+    "status": "EarlyStopped(val_loss_no_improve=3)",
+    "patience": 15,
+    "min_epochs": 15,
+    "best_combined_score": 0.9439966383004217,
+    "best_combined_epoch": 16,
+    "final_combined_score": 0.9439966383004217,
+    "patience_counter": 0
+  },
+  "combined_metric_weights": {
+    "auroc": 0.35,
+    "auprc": 0.3,
+    "f1": 0.15,
+    "accuracy": 0.05,
+    "mcc": 0.15
+  },
+  "test_results": {
+    "auprc": 0.9751785630217085,
+    "auroc": 0.9744616294290018,
+    "f1": 0.9159699113559464,
+    "accuracy": 0.9186408555570597,
+    "mcc": 0.839375706031142,
+    "precision": 0.9503307415573866,
+    "recall": 0.8840071247368705
+  }
+}

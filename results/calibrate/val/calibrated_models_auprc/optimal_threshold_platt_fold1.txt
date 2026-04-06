@@ -1,0 +1,6 @@
+Method: platt
+Fold: 1
+Model Type: auprc
+Optimal Threshold (from validation set): 0.422270
+Validation Precision: 0.8201834862385321
+Validation Recall: 0.93125

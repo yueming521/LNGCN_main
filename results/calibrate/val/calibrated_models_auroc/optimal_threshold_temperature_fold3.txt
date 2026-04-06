@@ -1,0 +1,6 @@
+Method: temperature
+Fold: 3
+Model Type: auroc
+Optimal Threshold (from validation set): 0.356754
+Validation Precision: 0.8206521739130435
+Validation Recall: 0.94375

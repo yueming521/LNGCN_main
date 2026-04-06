@@ -1,0 +1,6 @@
+Method: beta
+Fold: 2
+Model Type: auprc
+Optimal Threshold (from validation set): 0.750751
+Validation Precision: 0.8203592814371258
+Validation Recall: 0.85625

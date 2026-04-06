@@ -1,0 +1,29 @@
+===== K-Fold Cross Validation Results Summary =====
+
+Validation set results:
+Fold 1: Best AUPRC=0.7903@28, Best AUROC=0.9570@38, ACC=0.9380, Precision=0.6264, Recall=0.8000, F1=0.7027, MCC=0.6748
+Fold 2: Best AUPRC=0.7517@47, Best AUROC=0.9495@47, ACC=0.9341, Precision=0.6142, Recall=0.7562, F1=0.6779, MCC=0.6459
+Fold 3: Best AUPRC=0.7864@33, Best AUROC=0.9450@26, ACC=0.9433, Precision=0.6717, Recall=0.7068, F1=0.7458, MCC=0.6767
+Fold 4: Best AUPRC=0.7569@44, Best AUROC=0.9406@25, ACC=0.9353, Precision=0.6189, Recall=0.7646, F1=0.6841, MCC=0.6530
+Fold 5: Best AUPRC=0.7829@28, Best AUROC=0.9525@31, ACC=0.9408, Precision=0.6545, Recall=0.6990, F1=0.7500, MCC=0.6683
+
+Test set results (based on best AUPRC model):
+Fold 1: AUPRC=0.7696, AUROC=0.9430, ACC=0.9372, Precision=0.6248, Recall=0.7883, F1=0.6971, MCC=0.6682
+Fold 2: AUPRC=0.7343, AUROC=0.9423, ACC=0.9346, Precision=0.6129, Recall=0.7783, F1=0.6858, MCC=0.6556
+Fold 3: AUPRC=0.7618, AUROC=0.9322, ACC=0.9459, Precision=0.6898, Recall=0.7450, F1=0.7163, MCC=0.6871, 
+Fold 4: AUPRC=0.7451, AUROC=0.9359, ACC=0.9371, Precision=0.6227, Recall=0.7950, F1=0.6984, MCC=0.6700
+Fold 5: AUPRC=0.7585, AUROC=0.9341, ACC=0.9415, Precision=0.6589, Recall=0.7500, F1=0.7015, MCC=0.6709
+
+Test set results (based on best AUROC model):
+Fold 1: AUPRC=0.7699, AUROC=0.9481, ACC=0.9502, Precision=0.7299, Recall=0.7250, F1=0.7274, MCC=0.7000
+Fold 2: AUPRC=0.7343, AUROC=0.9423, ACC=0.9346, Precision=0.6129, Recall=0.7783, F1=0.6858, MCC=0.6556
+Fold 3: AUPRC=0.7556, AUROC=0.9425, ACC=0.9291, Precision=0.5827, Recall=0.7983, F1=0.6737, MCC=0.6449
+Fold 4: AUPRC=0.7396, AUROC=0.9420, ACC=0.9384, Precision=0.6455, Recall=0.7283, F1=0.6844, MCC=0.6519
+Fold 5: AUPRC=0.7619, AUROC=0.9385, ACC=0.9429, Precision=0.6692, Recall=0.7450, F1=0.7050, MCC=0.6747
+
+Test set results (based on best F1 model):
+Fold 1: AUPRC=0.7631, AUROC=0.9421, ACC=0.9477, Precision=0.7081, Recall=0.7317, F1=0.7197, MCC=0.6910
+Fold 2: AUPRC=0.7312, AUROC=0.9404, ACC=0.9415, Precision=0.6976, Recall=0.6383, F1=0.6667, MCC=0.6354
+Fold 3: AUPRC=0.7597, AUROC=0.9365, ACC=0.9439, Precision=0.6817, Recall=0.7283, F1=0.7043, MCC=0.6738
+Fold 4: AUPRC=0.7298, AUROC=0.9250, ACC=0.9455, Precision=0.7120, Recall=0.6800, F1=0.6957, MCC=0.6659
+Fold 5: AUPRC=0.7533, AUROC=0.9208, ACC=0.9485, Precision=0.7234, Recall=0.7100, F1=0.7166, MCC=0.6883

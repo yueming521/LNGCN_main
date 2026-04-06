@@ -1,0 +1,78 @@
+{
+  "experiment": "D1_NoComp_dc",
+  "description": "D1_NoComp: Keep CfC+LTC, remove all compensation mechanisms (structural enhancement, multi-scale, Set2Set pooling, residual connections, LTC Dense) to test limits of basic temporal components",
+  "scientific_hypothesis": "Validate the performance limit of CfC+LTC temporal components by removing all compensation mechanisms",
+  "config_changes": {
+    "use_cfc": true,
+    "cfc_type": "original",
+    "cfc_layers": 3,
+    "use_ltc": true,
+    "ltc_type": "enhanced",
+    "ltc_layers": 2,
+    "ltc_residual": false,
+    "use_distance": true,
+    "use_structure_enhance": false,
+    "use_multi_scale": false,
+    "pool_type": "mean",
+    "fusion_type": "symmetric",
+    "use_ltc_dense": false,
+    "fc_layers": 2,
+    "dropout": 0.4
+  },
+  "total_epochs": 50,
+  "training_time_seconds": 54605.520424604416,
+  "best_val_auprc": 0.978482718635277,
+  "best_val_auroc": 0.9787846732654015,
+  "best_epoch_auprc": 15,
+  "best_epoch_auroc": 15,
+  "best_train_metrics": {
+    "epoch": 15,
+    "loss": 0.03093128363749512,
+    "auprc": 0.9918799478690146,
+    "auroc": 0.9914199569994873,
+    "precision": 0.9612991219844855,
+    "recall": 0.9554998220670723,
+    "f1": 0.9583906990974453,
+    "accuracy": 0.9585365853658536,
+    "mcc": 0.9170895774211772
+  },
+  "best_val_metrics": {
+    "epoch": 15,
+    "loss": 0.0575402953182206,
+    "auprc": 0.978482718635277,
+    "auroc": 0.9787846732654015,
+    "precision": 0.9266165817011001,
+    "recall": 0.9373685281943408,
+    "f1": 0.931961544948558,
+    "accuracy": 0.9317358784309744,
+    "mcc": 0.8635326731811115
+  },
+  "early_stopping": {
+    "enabled": true,
+    "triggered": true,
+    "epoch": 15,
+    "status": "EarlyStopped(val_loss_no_improve=3)",
+    "patience": 15,
+    "min_epochs": 15,
+    "best_combined_score": 0.9520303778744728,
+    "best_combined_epoch": 15,
+    "final_combined_score": 0.9520303778744728,
+    "patience_counter": 0
+  },
+  "combined_metric_weights": {
+    "auroc": 0.35,
+    "auprc": 0.3,
+    "f1": 0.15,
+    "accuracy": 0.05,
+    "mcc": 0.15
+  },
+  "test_results": {
+    "auprc": 0.9795426119667511,
+    "auroc": 0.9791186699646622,
+    "f1": 0.9349778790722618,
+    "accuracy": 0.9343441180452146,
+    "mcc": 0.8687566639011416,
+    "precision": 0.9289253556396185,
+    "recall": 0.9411097916441757
+  }
+}

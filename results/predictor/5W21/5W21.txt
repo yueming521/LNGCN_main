@@ -1,0 +1,4 @@
+FGFR1	FGF23
+FGFR1	klotho
+klotho	FGF23
+klotho_with_FGFR1	FGF23

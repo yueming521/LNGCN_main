@@ -1,0 +1,53 @@
+Ablation Experiment Description:
+1. Benchmark: Fold5 of the original model, full model
+2. A1_NoCfC: Remove the PreprocessCfC module to validate the importance of CfC for extracting dynamic information from sequence features
+Scientific hypothesis: The CfC module is critical for extracting dynamic information from sequence features; removing it will significantly reduce performance
+3. B1_NoLTC: Completely remove LTC temporal processing, keep only graph convolution
+Scientific hypothesis: Validate the importance of LTC temporal modeling for protein interaction prediction
+4. C1_NoLTCDense: Keep the LTC layer but remove the original temporal Dense (LTC Dense) layer, replace with the basic fully connected layer SimpleDense
+Scientific hypothesis: Validate the necessity and contribution of temporal-aware Dense (LTC Dense) compared to a standard fully connected layer
+5. D1_NoComp: Keep CfC+LTC but remove all compensation mechanisms (structural enhancement, multi-scale, Set2Set pooling, residual connections, LTC Dense) to test the limits of basic temporal components
+Scientific hypothesis: Validate the performance limit of CfC+LTC temporal components when all compensation mechanisms are removed
+6. E1_AB_NoCfC_NoLTC: Remove both CfC preprocessing and LTC temporal processing
+Scientific hypothesis: Validate the impact of temporal modeling component combinations on overall performance and test model degradation
+
+Validation set results:
+Benchmark: Loss: 0.0011, AUPRC: 0.9816, AUROC: 0.9821, Accuracy: 0.9442, Precision: 0.9389, F1: 0.9446, Recall: 0.9503, MCC: 0.8885
+A1_NoCfC: Loss: 0.0640, AUPRC: 0.9763, AUROC: 0.9755, Precision: 0.9506, Recall: 0.8848, F1: 0.9165, Accuracy: 0.9197, MCC: 0.8413
+B1_NoLTC: Loss: 0.0603, AUPRC: 0.9707, AUROC: 0.9699, Precision: 0.8960, Recall: 0.9320, F1: 0.9137, Accuracy: 0.9120, MCC: 0.8248
+C1_NoLTCDense: Loss: 0.0613, AUPRC: 0.9787, AUROC: 0.9790, Precision: 0.9150, Recall: 0.9490, F1: 0.9317, Accuracy: 0.9306, MCC: 0.8618
+D1_NoComp: Loss: 0.0587, AUPRC: 0.9779, AUROC: 0.9777, Precision: 0.9335, Recall: 0.9226, F1: 0.9281, Accuracy: 0.9287, MCC: 0.8574
+E1_AB_NoCfC_NoLTC: Loss: 0.0737, AUPRC: 0.9607, AUROC: 0.9611, Precision: 0.8863, Recall: 0.9137, F1: 0.8998, Accuracy: 0.8985, MCC: 0.7975
+
+Test set results (based on best AUPRC model):
+Benchmark: AUPRC: 0.9823, AUROC: 0.9829, Accuracy: 0.9468, Precision: 0.9417, Recall: 0.9525, F1-Score: 0.9471, MCC: 0.8936
+A1_NoCfC: AUPRC: 0.9752, AUROC: 0.9745, F1 Score: 0.9160, Precision: 0.9503, Recall: 0.8840, Accuracy: 0.9186, MCC: 0.8394
+B1_NoLTC: AUPRC: 0.9718, AUROC: 0.9700, F1 Score: 0.9145, Precision: 0.8991, Recall: 0.9304, Accuracy: 0.9127, MCC: 0.8259
+C1_NoLTCDense: AUPRC: 0.9792, AUROC: 0.9786, F1 Score: 0.9328, Precision: 0.9186, Recall: 0.9475, Accuracy: 0.9316, MCC: 0.8635
+D1_NoComp: AUPRC: 0.9795, AUROC: 0.9791, F1 Score: 0.9350, Precisio: 0.9289, Recall: 0.9411, Accuracy: 0.9343, MCC: 0.8688
+E1_AB_NoCfC_NoLTC: AUPRC: 0.9627, AUROC: 0.9616, F1 Score: 0.8954, Precision:  0.8578, Recall: 0.9364, Accuracy: 0.8902, MCC: 0.7837
+
+Test set results (based on best AUROC model):
+Benchmark: AUPRC: 0.9823, AUROC: 0.9829, Accuracy: 0.9468, Precision: 0.9417, Recall: 0.9525, F1-Score: 0.9471, MCC: 0.8936
+A1_NoCfC: AUPRC: 0.9752, AUROC: 0.9745, F1 Score: 0.9160, Precision: 0.9503, Recall: 0.8840, Accuracy: 0.9186, MCC: 0.8394
+B1_NoLTC: AUPRC: 0.9718, AUROC: 0.9700, F1 Score: 0.9145, Precision: 0.8991, Recall: 0.9304, Accuracy: 0.9127, MCC: 0.8259
+C1_NoLTCDense: AUPRC: 0.9792, AUROC: 0.9786, F1 Score: 0.9328, Precision: 0.9186, Recall: 0.9475, Accuracy: 0.9316, MCC: 0.8635
+D1_NoComp: AUPRC: 0.9795, AUROC: 0.9791, F1 Score: 0.9350, Precisio: 0.9289, Recall: 0.9411, Accuracy: 0.9343, MCC: 0.8688
+E1_AB_NoCfC_NoLTC: AUPRC: 0.9634, AUROC: 0.9626, F1 Score: 0.8981, Precision: 0.8669, Recall:  0.9316, Accuracy: 0.8939, MCC: 0.7900
+
+Ablation generalization results on the yeast dataset:
+Generalization results (based on best AUPRC model):
+Benchmark: AUPRC: 0.9372, AUROC: 0.9352, Accuracy: 0.8629, Precision: 0.8511, Recall: 0.8797, F1-Score: 0.8652
+A1_NoCfC: AUPRC: 0.5421, AUROC: 0.5402, Accuracy: 0.5000, Precision: 0.5000, Recall: 1.0000, F1-Score: 0.6667
+B1_NoLTC: AUPRC: 0.7556, AUROC: 0.7715, Accuracy: 0.5000, Precision: 0.5000, Recall: 1.0000, F1-Score: 0.6667
+C1_NoLTCDense: AUPRC: 0.3869, AUROC: 0.3234, Accuracy: 0.5000, Precision: 0.0000, Recall: 0.0000, F1 Score: 0.0000
+D1_NoComp: AUPRC: 0.9357, AUROC: 0.9329, Accuracy: 0.8594, Precision: 0.8600, Recall: 0.8587, F1-Score: 0.8593
+E1_AB_NoCfC_NoLTC: AUPRC: 0.5593, AUROC: 0.5417, Accuracy: 0.5295, Precision: 0.5578, Recall: 0.2848, F1-Score: 0.3771
+
+Generalization results (based on best AUROC model):
+Benchmark: AUPRC: 0.9372, AUROC: 0.9352, Accuracy: 0.8629, Precision: 0.8511, Recall: 0.8797, F1-Score: 0.8652
+A1_NoCfC: AUPRC: 0.5556, AUROC: 0.5574, Accuracy: 0.5000, Precision: 0.5000, Recall: 1.0000, F1-Score: 0.6667
+B1_NoLTC: AUPRC: 0.8144, AUROC: 0.8201, Accuracy: 0.5101, Precision: 0.5101, Recall: 0.9993, F1-Score: 0.6710
+C1_NoLTCDense: AUPRC: 0.4675, AUROC: 0.4733, Accuracy: 0.4954, Precision: 0.4060, Recall: 0.0200, F1 Score: 0.0381
+D1_NoComp: AUPRC: 0.9341, AUROC: 0.9322, Accuracy: 0.8544, Precision: 0.8300, Recall: 0.8915, F1-Score: 0.8596
+E1_AB_NoCfC_NoLTC: AUPRC: 0.5245, AUROC: 0.4797, Accuracy: 0.4616, Precision: 0.4757, Recall: 0.7535, F1-Score: 0.5832

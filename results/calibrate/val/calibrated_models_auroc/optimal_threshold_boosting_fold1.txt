@@ -1,0 +1,6 @@
+Method: boosting
+Fold: 1
+Model Type: auroc
+Optimal Threshold (from validation set): 0.550954
+Validation Precision: 0.822429906542056
+Validation Recall: 0.9166666666666666

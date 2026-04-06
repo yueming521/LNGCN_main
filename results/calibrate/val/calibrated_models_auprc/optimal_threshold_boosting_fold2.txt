@@ -1,0 +1,6 @@
+Method: boosting
+Fold: 2
+Model Type: auprc
+Optimal Threshold (from validation set): 0.758132
+Validation Precision: 0.8205645161290323
+Validation Recall: 0.8479166666666667

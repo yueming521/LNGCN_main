@@ -1,0 +1,26 @@
+[
+  {
+    "model_name": "E1_AB_NoCfC_NoLTC_AUPRC",
+    "auprc": 0.5592912530367407,
+    "auroc": 0.5417065683753516,
+    "accuracy": 0.5295338658002797,
+    "precision": 0.5578435704816616,
+    "recall": 0.2848246920265331,
+    "f1": 0.37710598637830084,
+    "num_samples": 44322,
+    "num_positive": 22161,
+    "num_negative": 22161
+  },
+  {
+    "model_name": "E1_AB_NoCfC_NoLTC_AUROC",
+    "auprc": 0.5244601036835549,
+    "auroc": 0.47972058581158245,
+    "accuracy": 0.4615540814945174,
+    "precision": 0.4757278787533474,
+    "recall": 0.7535309778439601,
+    "f1": 0.5832387405479977,
+    "num_samples": 44322,
+    "num_positive": 22161,
+    "num_negative": 22161
+  }
+]
