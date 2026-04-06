@@ -14,7 +14,7 @@ conda env create -f environment.yml
 ```bash
 # ESM2 feature extraction 
 python features/esm2/esm2fea.py
-(	Note: The esm2_t33_650M_UR50D.pt pre-trained weights need to be downloaded from the official ESM-2 repository before running the code.)
+(Note: The esm2_t33_650M_UR50D.pt pre-trained weights need to be downloaded from the official ESM-2 repository before running the code.)
 
 # ESM-if1 feature extraction
 python features/esm_if1/extract_structure_features-esmif1.py
