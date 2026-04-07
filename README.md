@@ -104,4 +104,4 @@ Processing workflow: Provide the extracted feature paths and specific protein ID
 · DGL graph neural network (https://www.dgl.ai/)
 
 ## License and Citation
-If you use this project in your research, please cite the relevant papers and original references for the resources used.
+If you use this project in your research, please cite this weblink and thanks Yueming Xiao, Yifan Zheng, Yu Hua, Jiahua Peng, Jinliang Liu, Yuan Qu, Jizhuang Xu, Rao Fu, Qiuting Qian, Make Zhao, Xinxin Zhang, Jingjing Zhao, Yifei Yao, Martin Kosar*, Yuehai Ke*, Ying Chi* with Department of Pharmacy of the Second Affiliated Hospital of Zhejiang University School of Medicine, and Zhejiang University-University of Edinburgh Institute (ZJE), Zhejiang University, No.866 Yu Hang Tang road, Hangzhou, 310058, Zhejiang Province, China.
