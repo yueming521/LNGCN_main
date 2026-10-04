@@ -1,0 +1,17 @@
+=== Fold 1 测试集结果 - 最佳AUROC模型 ===
+模型路径: /teams/YingChiLab_1702378116/RaoFu/1ym/c2_output_n/fold1/18844-enhanced-earlystop_fold1_best_auroc.pt
+测试样本数: 18460
+正样本数: 9230
+负样本数: 9230
+
+评估指标:
+AUPRC: 0.968336
+AUROC: 0.966513
+Accuracy: 0.904767
+Precision: 0.939323
+Recall: 0.865439
+F1-Score: 0.900868
+MCC: 0.812050
+Confusion Matrix:
+[[8714  516]
+ [1242 7988]]

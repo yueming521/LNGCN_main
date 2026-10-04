@@ -1,0 +1,35 @@
+mode: c5
+train_edges: 51488 (pos=25744, neg=25744)
+val_edges: 6436 (pos=3218, neg=3218)
+test_edges: 6436 (pos=3218, neg=3218)
+train_proteins: 11410
+val_proteins: 3177
+test_proteins: 3440
+train_val_protein_overlap: 0
+train_test_protein_overlap: 0
+val_test_protein_overlap: 0
+train_test_exclusion_component_overlap: 0
+train_val_exclusion_component_overlap: 0
+val_test_exclusion_component_overlap: 0
+train_internal_edge_duplicates_undirected: 0
+val_internal_edge_duplicates_undirected: 0
+test_internal_edge_duplicates_undirected: 0
+train_val_edge_overlap_undirected: 0
+train_test_edge_overlap_undirected: 0
+val_test_edge_overlap_undirected: 0
+test_edges_both_seen_in_train: 0
+test_edges_one_seen_in_train: 0
+test_edges_none_seen_in_train: 6436
+
+metadata:
+attempt: 1902
+balanced_unit_per_label: 3218
+test_clusters: 1684
+val_clusters: 1733
+unused_candidate_edges: 96457
+unused_edges_after_sampling: 120314
+sequence_cluster_rows: 18844
+structure_cluster_rows: 18844
+sequence_identity_rows: 1151863
+sequence_identity_passing_rows: 228508
+sequence_identity_union_rows: 228508

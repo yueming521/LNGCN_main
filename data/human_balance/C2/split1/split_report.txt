@@ -1,0 +1,26 @@
+mode: c2
+train_edges: 147680 (pos=73840, neg=73840)
+val_edges: 18460 (pos=9230, neg=9230)
+test_edges: 18460 (pos=9230, neg=9230)
+train_proteins: 17123
+val_proteins: 12366
+test_proteins: 11365
+train_test_protein_overlap: 9652
+train_internal_edge_duplicates_undirected: 0
+val_internal_edge_duplicates_undirected: 0
+test_internal_edge_duplicates_undirected: 0
+train_val_edge_overlap_undirected: 0
+train_test_edge_overlap_undirected: 0
+val_test_edge_overlap_undirected: 0
+test_edges_both_seen_in_train: 0
+test_edges_one_seen_in_train: 18460
+test_edges_none_seen_in_train: 0
+
+metadata:
+attempt: 1
+resample_attempt: 7
+novel_proteins: 1719
+train_candidates: 153123
+test_candidates: 30112
+balanced_unit_per_label: 9230
+unused_edges: 74
