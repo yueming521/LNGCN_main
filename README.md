@@ -12,8 +12,9 @@ conda env create -f environment.yml
 
 #### 1.1 Feature Extraction
 ```bash
-# ESM2 feature extraction
+# ESM2 feature extraction 
 python features/esm2/esm2fea.py
+(Note: The esm2_t33_650M_UR50D.pt pre-trained weights need to be downloaded from the official ESM-2 repository before running the code.)
 
 # ESM-if1 feature extraction
 python features/esm_if1/extract_structure_features-esmif1.py
@@ -68,11 +69,23 @@ python model/calibration_and_predictor/ppi_predictor.py
 STRING Database(https://string-db.org/)
 UniProt(https://www.uniprot.org/)
 ### Dataset Details
-· Balanced human protein-protein interactions (human_balance), containing 92,337 positive samples and 92,337 negative samples, suitable for 5-fold cross-validation training.
-· Imbalanced human protein-protein interactions (human_imbalance), containing 3,000 positive samples and 29,724 negative samples, suitable for testing model performance on imbalanced data and for 5-fold cross-validation training on imbalanced data.
-· Yeast protein-protein interactions (yeast), containing yeast positive and negative samples, used as an independent test set for generalization evaluation.
-· Ablation experiment data (ablation_experiments), using the pre-split training/validation/test sets from Fold 5 of balanced human protein-protein interaction data.
-· Calibration dataset (calibration), containing 3,000 negative samples and 3,000 positive samples, used for model probability calibration.
+  Contains 92,337 positive and 92,337 negative human PPI samples. This dataset serves as the primary human benchmark from which the C1–C4 evaluation settings are constructed.
+#### C1: Random edge-level split (`C1`)  
+  Conventional random interaction-level benchmark using five-fold cross-validation. Protein identities may be shared across the training, validation, and test subsets because the split is performed at the interaction-edge level. This setting is mainly used to evaluate predictive performance under the standard random-split condition.
+#### C2: One-unseen-protein split (`C2`)  
+  Evaluates generalization when each test interaction contains one protein observed during training and one previously unseen protein. Three independent constrained train/validation/test partitions are provided, with an approximate 8:1:1 ratio.
+#### C3: Protein-disjoint split (`C3`)  
+  Uses protein-disjoint partitions in which both proteins in each test interaction are absent from the training set. Three independent constrained train/validation/test partitions are provided, with an approximate 8:1:1 ratio.
+#### C4: Protein-, homology-, and sequence-controlled split (`C4`)  
+  Provides the most stringent generalization setting. In addition to protein-level separation, sequence- and structure-level relatedness across subsets is controlled using MMseqs2- and Foldseek-based exclusion components. Cross-subset protein pairs satisfying the predefined sequence-similarity criterion of ≥30% sequence identity and ≥80% bidirectional coverage are excluded. Three independent constrained train/validation/test partitions are provided, with an approximate 8:1:1 ratio.
+#### Imbalanced human protein–protein interactions (`human_imbalance`)  
+  Contains 3,000 positive and 29,724 negative samples, corresponding to an approximately 1:10 positive-to-negative ratio. This dataset is used to evaluate LNGCN under class imbalance, including five-fold evaluation and candidate-ranking analyses.
+#### Yeast protein–protein interactions (`yeast`)  
+  Contains positive and negative yeast PPI samples and is used as an independent external dataset for human-to-yeast transfer evaluation. Models trained on human data are directly evaluated on this dataset without additional retraining or fine-tuning on yeast samples.
+#### Ablation experiment data (`ablation_experiments`)  
+  Uses the predefined training, validation, and test subsets from C1 Fold 5 of the balanced human benchmark. These data are used to evaluate the contributions of individual LNGCN components under an identical data partition.
+#### Calibration dataset (`calibration`)  
+  Contains 3,000 positive and 3,000 negative protein pairs and is used to evaluate and fit the probability-calibration strategies applied to LNGCN outputs.
 
 ## 3. Protein Feature Extraction
 ### 3.1 ESM2 Sequence Feature Extraction
@@ -103,4 +116,4 @@ Processing workflow: Provide the extracted feature paths and specific protein ID
 · DGL graph neural network (https://www.dgl.ai/)
 
 ## License and Citation
-If you use this project in your research, please cite the relevant papers and original references for the resources used.
+If you use this project in your research, please cite this weblink and thanks Yueming Xiao, Yifan Zheng, Yu Hua, Jiahua Peng, Jinliang Liu, Yuan Qu, Jizhuang Xu, Rao Fu, Qiuting Qian, Make Zhao, Xinxin Zhang, Jingjing Zhao, Yifei Yao, Martin Kosar*, Yuehai Ke*, Ying Chi* with Department of Pharmacy of the Second Affiliated Hospital of Zhejiang University School of Medicine, and Zhejiang University-University of Edinburgh Institute (ZJE), Zhejiang University, No.866 Yu Hang Tang road, Hangzhou, 310058, Zhejiang Province, China.
