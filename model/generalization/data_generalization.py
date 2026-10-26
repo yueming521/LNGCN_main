@@ -90,10 +90,7 @@ GRAPH_NPZ_DIR = os.getenv(
     "PPI_GRAPH_NPZ_DIR",
     "LNGCN_main/data/data_base/yeast/yeast_npz"
 )
-GRAPH_PKL_PATH = os.getenv(
-    "PPI_GRAPH_PKL_PATH",
-    "/teams/YingChiLab_1702378116/YuemingXiao/泛化/yeast6143.pkl"
-)
+
 
 COORD_CACHE = None 
 
