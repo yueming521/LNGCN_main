@@ -65,7 +65,7 @@ def monitor_progress_realtime(output_dir, total_ids, stop_event):
             break
 
 def run_3714_batch_with_progress():
-    base_dir = r"/teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/pdbtest"
+    base_dir = r"features/pdbtest"
     id_file = os.path.join(base_dir, "test.txt")
     pdb_dir = os.path.join(base_dir, "pdb")
     output_dir = os.path.join(base_dir, "freesasa_output")
