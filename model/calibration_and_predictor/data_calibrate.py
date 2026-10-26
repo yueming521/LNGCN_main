@@ -87,10 +87,6 @@ GRAPH_NPZ_DIR = os.getenv(
     "PPI_GRAPH_NPZ_DIR",
     "LNGCN_main/data/data_base/calibration/npz"
 )
-# GRAPH_PKL_PATH = os.getenv(
-#     "PPI_GRAPH_PKL_PATH",
-#     "/teams/YingChiLab_1702378116/YuemingXiao/PPI_yuece_new/1599jiaozhun/1599.pkl"
-# )
 
 COORD_CACHE = None 
 
