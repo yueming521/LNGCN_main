@@ -1,5 +1,4 @@
-=== Fold 1 测试集结果 - 最佳AUROC模型 ===
-模型路径: /teams/YingChiLab_1702378116/RaoFu/1ym/c2_output_n/fold4/18844-enhanced-earlystop_fold1_best_auroc.pt
+=== Split2 测试集结果 - 最佳AUROC模型 ===
 测试样本数: 18460
 正样本数: 9230
 负样本数: 9230
