@@ -1,7 +1,7 @@
 === Split 2 Test Set Results - Best AUROC Model ===
-Test Sample Count: 18,460
-Positive Sample Count: 9,230
-Negative Sample Count: 9,230
+Test Sample Count: 18460
+Positive Sample Count: 9230
+Negative Sample Count: 9230
 
 Evaluation Metrics:
 AUPRC: 0.965862
