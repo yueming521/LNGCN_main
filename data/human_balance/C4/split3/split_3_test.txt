@@ -1,4 +1,4 @@
-# c4 split 4 test - format: protein1_id	protein2_id	label
+# c4 split 3 test - format: protein1_id	protein2_id	label
 P98177	Q12778	1
 O95006	P46091	0
 Q9BYD1	O15235	1
