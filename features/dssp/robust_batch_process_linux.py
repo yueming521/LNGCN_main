@@ -365,9 +365,9 @@ class RobustDSSPBatchProcessor:
         self.log("Failure records saved")
 
 def main():
-    protein_ids_file = r"/teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/pdbtest/test.txt"
-    pdb_dir = r"/teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/pdbtest/pdb"
-    output_base_dir = r"/teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/pdbtest/dssp"
+    protein_ids_file = r"features/pdbtest/test.txt"
+    pdb_dir = r"features/pdbtest/pdb"
+    output_base_dir = r"features/pdbtest/dssp"
     max_workers = 4 
     if not os.path.exists(protein_ids_file):
         print(f"Error: protein ID file does not exist: {protein_ids_file}")
