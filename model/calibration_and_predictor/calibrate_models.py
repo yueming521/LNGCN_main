@@ -1763,8 +1763,8 @@ if __name__ == "__main__":
 
     # Data config
     use_wet_experiment_data = True
-    wet_pos_file = "/teams/YingChiLab_1702378116/YuemingXiao/PPI_yuece_new/jiaozhun/3000_pos.txt"
-    wet_neg_file = "/teams/YingChiLab_1702378116/YuemingXiao/PPI_yuece_new/jiaozhun/3000_neg_qf.txt"
+    wet_pos_file = "data/calibration/3000_pos.txt"
+    wet_neg_file = "data/calibration/3000_neg.txt"
 
     # Calibration task config
     do_kfold = True   # run 5-fold cross-validation
