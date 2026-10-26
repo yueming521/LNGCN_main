@@ -1,4 +1,4 @@
-# C3 fold 1 val - format: protein1_id	protein2_id	label
+# C3 split 1 val - format: protein1_id	protein2_id	label
 O75643	Q9NZ63	1
 P38606	O75787	1
 Q5JV73	Q9HCX4	0
