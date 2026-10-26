@@ -1,4 +1,4 @@
-# C3 fold 1 test - format: protein1_id	protein2_id	label
+# C3 split 1 test - format: protein1_id	protein2_id	label
 A6NH57	P22061	0
 Q29RF7	A8MWA4	0
 P0DKB5	O43148	0
