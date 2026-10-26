@@ -1,4 +1,4 @@
-# C3 fold 1 train - format: protein1_id	protein2_id	label
+# C3 split 1 train - format: protein1_id	protein2_id	label
 Q9BQF6	Q96QT4	0
 P20645	Q30154	0
 P01019	P61073	1
