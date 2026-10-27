@@ -1,11 +1,3 @@
-MATR3	P43243
-SUGP2	Q8IX01
-HNRNPC	P07910
-RALY	Q9UKM9
-HNRNPM	P52272
-ZNF326	Q5BKZ1
-NUP153	P49790
-ELAVL1	Q15717
-PTBP1	P26599
-GANP    O60318
-TPR     P12270
+TPR_pos.txt contains all currently known interactions involving TPR.
+TPR_unknown.txt contains protein pairs for which the interaction status with TPR is currently unknown.
+TPR_mass_spectrometry_10.txt contains 10 pairs validated by mass spectrometry, as reported in Kosar, M., Giannattasio, M., Piccini, D. et al. The human nucleoporin Tpr protects cells from RNA-mediated replication stress. Nat Commun 12, 3937 (2021). https://doi.org/10.1038/s41467-021-24224-3.
