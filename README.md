@@ -1,5 +1,5 @@
 # LNGCN
-A Distance-Aware Dynamics Network for Protein-Protein Interaction Prediction
+A distance-aware continuous-time graph framework for protein-protein interaction prioritization in experimental screening.
 
 ## 1. Quick Start
 
