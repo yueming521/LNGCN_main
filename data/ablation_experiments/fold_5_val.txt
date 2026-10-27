@@ -1,4 +1,4 @@
-# 验证集数据 - 格式: protein1_id	protein2_id	label
+# Validation set data - Format: protein1_id	protein2_id	label
 O60603	Q9NWZ3	1
 P22309	P04798	1
 P01275	P01298	1
