@@ -147,7 +147,6 @@ def process_split(gpu_id, seq_chunk, id_chunk, model_path):
     # Extract features
     return extract_features(model, alphabet, seq_chunk, id_chunk, batch_size=1, gpu_id=gpu_id)
 
-# 定义进程目标函数 - 替换lambda
 def process_gpu0(result_queue, sequences, ids, model_path):
     result = process_split(0, sequences, ids, model_path)
     result_queue.put(result)
@@ -234,7 +233,6 @@ def main():
     # Merge results
     all_results = results1 + results2
     
-    # 保存特征
     output_file = os.path.join(args.output_dir, "esm_features.pkl")
     with open(output_file, "wb") as f:
         pickle.dump(all_results, f)
