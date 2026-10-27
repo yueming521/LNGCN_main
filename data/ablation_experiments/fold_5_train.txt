@@ -1,4 +1,4 @@
-# 训练集数据 - 格式: protein1_id	protein2_id	label
+# Train set data - Format: protein1_id	protein2_id	label
 Q53GS7	Q06455	0
 Q9Y3C7	Q13156	0
 P17612	O95644	1
