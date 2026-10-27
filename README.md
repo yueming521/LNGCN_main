@@ -20,10 +20,10 @@ python features/esm2/esm2fea.py
 python features/esm_if1/extract_structure_features-esmif1.py
 
 # DSSP secondary structure feature extraction
-python features\dssp\robust_batch_process_linux.py
+python features/dssp/robust_batch_process_linux.py
 
 # FreeSASA relative solvent accessibility calculation
-python features\freesasa\run_rsa_linux.py
+python features/freesasa/run_rsa_linux.py
 
 # Build adjacency matrix
 python features/adj-matrix-rsa.py
