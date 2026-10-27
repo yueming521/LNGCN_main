@@ -1,4 +1,4 @@
-# 测试集数据 - 格式: protein1_id	protein2_id	label
+# Test set data - Format: protein1_id	protein2_id	label
 P35354	P14555	1
 Q9H9J2	P82932	1
 Q86SQ6	Q96B77	0
