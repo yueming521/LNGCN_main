@@ -53,9 +53,9 @@ Edit these variables in `robust_batch_process_linux.py` inside `main()`:
 Current defaults:
 
 ```python
-protein_ids_file = "/teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/pdbtest/test.txt"
-pdb_dir = "/teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/pdbtest/pdb"
-output_base_dir = "/teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/pdbtest/dssp"
+protein_ids_file = features/pdbtest/test.txt"
+pdb_dir = "features/pdbtest/pdb"
+output_base_dir = "features/pdbtest/dssp"
 max_workers = 4
 force_reprocess = True
 ```
@@ -79,13 +79,13 @@ pdbtest/
 From any directory:
 
 ```bash
-python /teams/YingChiLab_1702378116/YuemingXiao/1upload_new/features/dssp/robust_batch_process_linux.py
+python features/dssp/robust_batch_process_linux.py
 ```
 
 Or from project root:
 
 ```bash
-python 1upload_new/features/dssp/robust_batch_process_linux.py
+python features/dssp/robust_batch_process_linux.py
 ```
 
 ---
